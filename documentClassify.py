@@ -22,6 +22,7 @@ class NICClassify:
         self.gray = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
 
     def OCR(self):
+        pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
         self.text = pytesseract.image_to_string(self.gray)
         # self.text2 = pytesseract.image_to_string(self.gray, config= r'--oem 3 --psm 6')
 
