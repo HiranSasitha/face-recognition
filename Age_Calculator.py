@@ -16,8 +16,7 @@ class AgeCalculator:
             else:
                 raise ValueError("Invalid NIC number format. Must be either 9 or 12 digits.")
 
-            current_year = datetime.now().year
-            age = current_year - birth_year
+           
         
         else:
             age = None
